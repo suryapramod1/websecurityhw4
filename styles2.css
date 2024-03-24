@@ -1,0 +1,171 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #808080; /* Gray color */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.company-logo img {
+    height: 50px;
+}
+
+.company-name {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-field {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Animated Button */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Added transition */
+    font-family: Arial, sans-serif; /* Added font-family */
+}
+
+button:hover {
+    background-color: #2ecc71; /* Changed hover color to green */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #808080;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Dashboard Container */
+.dashboard-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.employee-profile,
+.projects,
+.awards {
+    margin-bottom: 30px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif; /* Added font-family */
+    color: #ff7f50; /* Different color for h2 */
+}
+
+.profile-details {
+    display: flex;
+    align-items: center;
+}
+
+.profile-image {
+    margin-right: 20px;
+}
+
+.profile-image img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.details p {
+    margin: 5px 0;
+    color: #000; /* Set paragraph text color to black */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Payroll Container */
+.payroll-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif; /* Added font-family */
+    color: #6495ed; /* Different color for h1 */
+}
+
+.personal-details,
+.payroll-info {
+    margin-bottom: 30px;
+}
+
+.details {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.profile-image {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.profile-image img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+footer {
+    background-color: #808080;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

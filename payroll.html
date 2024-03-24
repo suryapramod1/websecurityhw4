@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe Payroll</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <header>
+        <div class="company-logo">
+            <img src="logo.png" alt="Company Logo">
+        </div>
+        <div class="company-name">
+            Vulnerable Corp
+        </div>
+    </header>
+    <div class="payroll-container">
+        <h1>John Doe</h1>
+        <section class="personal-details">
+            <h2>Personal Details</h2>
+            <div class="details">
+                <!-- Security Mistake: Lack of input validation -->
+                <p>Address: 123 Main Street, Anytown, USA</p>
+                <p>Phone Number: 555-1234</p>
+                <p>Alternate Phone Number: 555-5678</p>
+                <p>Insurance ID: INS123456</p>
+                <!-- Security Mistake: Cross-Site Scripting (XSS) vulnerability by displaying unsanitized user input -->
+                <p>Email: john.doe@Vulnerable.com</p>
+                <p>Role: Employee</p>
+                <p>SSN: 123-45-6789</p>
+                <div class="profile-image">
+                    <!-- Security Mistake: Insecure Direct Object Reference (IDOR) by exposing direct path to the image -->
+                    <img src="employee.jpg" alt="Employee Image">
+                </div>
+            </div>
+        </section>
+        <section class="payroll-info">
+            <h2>Payroll Information</h2>
+            <div class="details">
+                <!-- Security Mistake: Lack of input validation -->
+                <p>Bank Details: Bank of Vulnerability, Account Number: 1234567890</p>
+                <p>Pay Amount: $5000</p>
+                <p>Tax Deduction: $500</p>
+                <p>Last Payment Date: 2024-03-20</p>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Vulnerable Corp. All rights reserved.</p>
+    </footer>
+</body>
+</html>

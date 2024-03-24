@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Dashboard</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <header>
+        <div class="company-logo">
+            <img src="logo.png" alt="Company Logo">
+        </div>
+        <div class="company-name">
+            Vulnerable Corp
+        </div>
+    </header>
+    <div class="dashboard-container">
+        <section class="employee-profile">
+            <h2>Employee Profile</h2>
+            <div class="profile-details">
+                <div class="profile-image">
+                    <!-- Security Mistake: Insecure Direct Object Reference (IDOR) by exposing direct path to the image -->
+                    <img src="employee.jpg" alt="Employee Image">
+                </div>
+                <div class="details">
+                    <!-- Security Mistake: Lack of input validation -->
+                    <p>Name: John Doe</p>
+                    <p>Date of Birth: 06/03/1998</p>
+                    <p>Email: john.doe@Vulnerable.com</p>
+                    <p>Number of Projects: 5</p>
+                    <!-- Security Mistake: Cross-Site Scripting (XSS) vulnerability by displaying unsanitized user input -->
+                    <p>Technologies: HTML, CSS, JavaScript, SQL, Python</p>
+                </div>
+            </div>
+        </section>
+        <section class="projects">
+            <h2>Projects</h2>
+            <ul>
+                <!-- Security Mistake: Lack of input validation -->
+                <li>AI Healthcare Bot System using Python</li>
+                <li>Timer Based Phone Silencer App</li>
+                <li>Online Voting System Project Python</li>
+                <li>Organic Food Traceability System using Blockchain</li>
+                <li>Android Based Image Steganography</li>
+            </ul>
+        </section>
+        <section class="awards">
+            <h2>Awards and Experience</h2>
+            <!-- Security Mistake: Lack of proper authentication and authorization for sensitive information -->
+            <p>Award: Best Employee of the Year 2023</p>
+            <p>Award: The Social Butterfly of the month</p>
+            <p>Award: The Dedicated Employee of the Quarter</p>
+            <p>Years of Experience: HTML (5), CSS (5), JavaScript (4), SQL (3), Python (3)</p>
+        </section>
+        <section class="payroll-link">
+            <h2>Payroll</h2>
+            <button onclick="redirectToPayroll()">View Payroll</button>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Vulnerable Corp. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
